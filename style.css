@@ -1,0 +1,417 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap" rel="stylesheet">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* empieza el primer INDEX:HTML*/
+.inicio{
+    background-image: url(assets/img/fondoinicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+/* aca empieza la barra de navegacion */
+
+.logo{
+    display: flex;
+    width:80px ;
+    height:80px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: rgba(63, 113, 243, 0.76);
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.texto{
+    margin-top: 150px;
+    margin-left:350px;
+    font-size: 25px;
+    background-color:rgba(217, 217, 217, 0.795);
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+    color: white;
+}
+
+.boton{
+    width: 70px;
+    height: 30px;
+    background-color: rgba(63, 113, 243, 0.81);
+    color: white;
+    border-radius:4px;
+    border-style: none;
+    font-size: small;
+}
+
+a {
+  transition: background-color .5s;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: rgba(217, 217, 217, 0.481);
+}
+
+
+@media (max-width:1080px){
+    header{
+        background-color:lightgreen ;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    .navbar{
+       flex-direction: row;
+       align-items: center;
+    }
+    .navbar li a {
+        color: black;
+    }
+
+    .texto{
+       margin-top:150px;
+       margin-left:250px;
+    
+    }
+
+
+}
+
+@media(max-width:960px){
+    header{
+        background-color: lightseagreen;
+        justify-content: center;
+        text-align: center;
+    }
+  .navbar{
+    display:block;
+    justify-content: center;
+  }
+
+  .texto{
+    margin-top: 150px;
+    margin-left: 250px;
+  }
+
+}
+
+@media(max-width:320px){
+    header{
+        background-color: lightcoral;
+    }
+
+    .texto{
+        font-size: 15px;
+        margin-top:100px;
+        margin-left: 70px;
+    }
+}
+
+
+/* aca empieza el pie de pagina*/
+
+footer{
+
+    width: 100%;
+    padding: 50px 0px;
+    background-size: cover;
+
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 300px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color:white;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: white;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+/* empieza el segundo INDEX2:HTML*/
+
+.sobrenosotros{
+    background-image: url(assets/img/fondosobrenosotros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+.historia{
+    margin-top: 150px;
+    margin-left:350px;
+    font-size: 25px;
+    background-color:rgba(217, 217, 217, 0.795);
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+    color: black;
+}
+
+
+
+/* empieza el tercer INDEX3:HTML*/
+
+.cotizar{
+    background-image: url(assets/img/martin-katler-b-SEXbjZ-B0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+ }
+
+.caja img{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+}
+ .caja-1{
+  background-color: rgba(217, 217, 217, 0.795);
+  border-radius: 20px;
+  width: 400px;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-size: large;
+  font-family:cursive;
+ }
+
+ .caja-2{
+ background-color: rgba(217, 217, 217, 0.795);
+ border-radius: 20px;
+ width: 400px;
+ height: 500px;
+ justify-content: center;
+ text-align: center;
+ margin-top: 50px;
+ font-size: large;
+ font-family: cursive;
+ }
+
+ .caja-3{
+background-color:rgba(217, 217, 217, 0.795);
+border-radius: 20px;
+width: 400px;
+height: 500px;
+justify-content: center;
+text-align: center;
+margin-top: 50px;
+font-size: large;
+font-family: cursive;
+ }
+
+ /*Empieza el cuatro INDEX4.HTML*/
+
+ .preguntas{
+    background-image: url(assets/img/fondopreguntas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+ }
+
+ .contenedor{
+    display: flex;
+    flex-flow: column;
+    justify-content:space-evenly;
+ }
+
+ .t1{
+    background-color: rgba(217, 217, 217, 0.795);
+    border-radius: 20px;
+    width: 900px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+ }
+
+ .t2{
+    background-color: rgba(217, 217, 217, 0.795);
+    border-radius: 20px;
+    width: 900px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+ }
+
+ .t3{
+    background-color: rgba(217, 217, 217, 0.795);
+    border-radius: 20px;
+    width: 900px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .t4{
+    background-color: rgba(217, 217, 217, 0.795);
+    border-radius: 20px;
+    width: 900px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 300px;
+    display:block;
+    justify-content: center;
+    text-align: center;
+ }
+
+ /*Empieza el quinto INDEX5.HTML*/
+
+ .contacto{
+    background-image: url(assets/img/fondocontacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+ }
+
+ .boxcontacto{
+    display:flex;
+    background-color: rgba(217, 217, 217, 0.795);
+    border-radius: 20px;
+    width: 400px;
+    height:400px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 500px;
+    }
+
+    @media (max-width:1080px){
+        .boxcontacto{
+            margin-top:80px;
+            margin-left:350px;
+        }
+    }
+
+    @media(max-width:960px){
+        .boxcontacto{
+            font-size: small;
+            margin-top:80px;
+            margin-left:300px;
+        }
+    }
+
+    @media(max-width:320px){
+        .boxcontacto{
+            margin-left: 50px;
+            width: 250px;
+        }
+    }
